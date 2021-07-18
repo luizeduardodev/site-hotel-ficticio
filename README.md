@@ -1,4 +1,4 @@
 # Site de um Hotel fictício
-Site de um hotel fictício feito com Html5 e Css3.
+O site foi desenvolvido utilizando HTML5, CSS3 e JAVASCRIPT.
 
 Link do site: https://hotelparaisoo.netlify.app/
