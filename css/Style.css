@@ -1,0 +1,415 @@
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* Header */
+#cabecalho{
+    background-color: white;
+    transition: .3s;
+    padding: 5px 0px;
+}
+#cabecalho .container-header{
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#cabecalho .container-header img{
+    width: 200px;
+}
+/* Menu */
+#menu ul{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+#menu ul li a{
+    display: inline-block;
+    color: #191c03;
+    padding: 20px 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: .3s;
+    opacity: 0.8;
+}
+#menu ul li a:hover{
+    opacity: 1;
+}
+/* Banner */
+#main-banner{
+    background-image: url(../img/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+#main-banner::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#main-banner .container-banner{
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+#main-banner .container-banner .banner-info{
+    position: absolute;
+}
+#main-banner .container-banner .banner-info h1{
+    font-size: 2.3rem;
+    margin-bottom: 5px;
+    color: white;
+}
+#main-banner .container-banner .banner-info h2{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+#main-banner .container-banner .banner-info .btn{
+    text-decoration: none;
+    background-color: white;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    transition: .3s;
+    border: 1px solid black;
+}
+#main-banner .container-banner .banner-info .btn:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Conheça o hotel */
+#conheca-hotel{
+    padding: 50px 0px;
+}
+#conheca-hotel .container-conheca{
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#conheca-hotel .container-conheca h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #191c03;
+}
+#conheca-hotel .container-conheca p{
+    color: #191c03;
+    margin-bottom: 30px;
+}
+#conheca-hotel .container-conheca hr{
+    width: 200px;
+    height: 2px;
+    background-color: #191c03;
+    margin-bottom: 30px;
+    border: none;
+}
+#conheca-hotel .container-conheca .grid{
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#conheca-hotel .container-conheca .grid li{
+    height: 350px;
+    padding: 20px;
+    border-radius: 5px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+#conheca-hotel .container-conheca .grid li.small{
+    flex-basis: 50%;
+}
+#conheca-hotel .grid li.large{
+    flex-basis: 50%;
+}
+
+/* caracteristicas */
+#caracteristicas{
+    padding: 50px 0px;
+    background-color: #191c03;
+}
+#caracteristicas .container-cara{
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#caracteristicas .container-cara h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: white;
+}
+#caracteristicas .container-cara p{
+    color: white;
+    margin-bottom: 20px;
+}
+#caracteristicas .container-cara hr{
+    width: 200px;
+    height: 2px;
+    background-color: white;
+    margin-bottom: 50px;
+    border: none;
+}
+#caracteristicas .container-cara .grid{
+    width: 100%;
+    list-style: none;
+    display: flex;
+}
+#caracteristicas .container-cara .grid li{
+    padding: 0 15px;
+    text-align: center;
+}
+#caracteristicas .container-cara .grid li i{
+    color: #c3c63b;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+#caracteristicas .container-cara .grid li h4{
+    font-size: 1.5rem;
+    color: #c3c63b;
+    margin-bottom: 20px;
+}
+#caracteristicas .container-cara .grid li p{
+    color: white;
+}
+
+/* Email */
+#email{
+    padding: 50px 0px;
+}
+#email .container-email{
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#email .container-email h3{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #c3c63b;
+}
+#email .container-email p{
+    color: #c3c63b;
+    margin-bottom: 20px;
+}
+#email .container-email hr{
+    width: 200px;
+    height: 2px;
+    background-color: #c3c63b;
+    margin-bottom: 50px;
+    border: none;
+}
+#email .container-email form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+#email form input{
+    padding: 15px;
+    border: 1px solid #c3c63b;
+    border-radius: 5px;
+    margin-right: 1%;
+    flex: 1;
+}
+#email form button{
+    padding: 15px;
+    background-color: #c3c63b;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Footer */
+#footer{
+    background-color: #191c03;
+    padding: 50px 0px;
+}
+#footer .container-footer{
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#footer .container-footer ul{
+    list-style: none;
+    display: flex;
+    margin-bottom: 20px;
+    gap: 1rem;
+}
+#footer .container-footer ul li a{
+    color: #c3c63b;
+    font-size: 2rem;
+}
+#footer .container-footer p{
+    color: #c3c63b;
+}
+
+/* Responsividade */
+@media(max-width: 700px){
+    #cabecalho{
+        flex-direction: column;
+    }
+    img{
+        margin-bottom: 15px;
+    }
+    #hero h1{
+        font-size: 2.5rem;
+    }
+    #hero h3{
+        font-size: 1.5rem;
+    }
+    #conheca-hotel .grid li.small, #conheca-hotel .grid li.large{
+        flex-basis: 100%;
+    }
+    #caracteristicas .grid{
+        flex-direction: column;
+    }
+    #email form input{
+        flex-basis: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+@media(max-width:375px){
+    /* Header */
+    #cabecalho .container-header{
+        width: 95%;
+        flex-direction: column;
+    }
+    /* Menu */
+    #menu ul li a{
+        display: block;
+        padding: 8px;
+    }
+    /* Banner */
+    #main-banner .container-banner{
+        width: 95%;
+    }
+    #main-banner .container-banner .banner-info h1{
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    #main-banner .container-banner .banner-info h2{
+        font-size: 1.3rem;
+    }
+    #main-banner .container-banner .banner-info .btn{
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+    /* Conheça o hotel */
+    #conheca-hotel .container-conheca{
+        width: 95%;
+        text-align: center;
+    }
+    #conheca-hotel .container-conheca h3{
+        font-size: 1.8rem;
+    }
+    #conheca-hotel .container-conheca p{
+        margin-bottom: 30px;
+        font-size: 1rem;
+    }
+    #conheca-hotel .container-conheca hr{
+        width: 150px;
+    }
+    #conheca-hotel .container-conheca .grid li{
+        height: 300px;
+        padding: 10px;
+    }
+    #conheca-hotel .container-conheca .grid li.small{
+        flex-basis: 100%;
+    }
+    #conheca-hotel .grid li.large{
+        flex-basis: 100%;
+    }
+    /* caracteristicas */
+    #caracteristicas .container-cara{
+        width: 95%;
+        text-align: center;
+    }
+    #caracteristicas .container-cara h3{
+        font-size: 1.8rem;
+    }
+    #caracteristicas .container-cara p{
+        margin-bottom: 20px;
+        font-size: 0.9rem;
+    }
+    #caracteristicas .container-cara hr{
+        width: 150px;
+        margin-bottom: 30px;
+    }
+    #caracteristicas .container-cara .grid li{
+        padding: 0px;
+    }
+    #caracteristicas .container-cara .grid li i{
+        font-size: 3rem;
+    }
+    #caracteristicas .container-cara .grid li h4{
+        font-size: 1.3rem;
+    }
+    /* Email */
+    #email .container-email{
+        width: 95%;
+        text-align: center;
+    }
+    #email .container-email h3{
+        font-size: 1.8rem;
+    }
+    #email .container-email hr{
+        width: 150px;
+        margin-bottom: 50px;
+    }
+    #email .container-email form{
+        width: 90%;
+    }
+    #email form input{
+        margin-right: 0;
+    }
+    #email form button{
+        padding: 10px;
+    }
+    /* Footer */
+    #footer .container-footer{
+        width: 95%;
+        text-align: center;
+    }
+    #footer .container-footer ul li a{
+        font-size: 1.8rem;
+    }
+}
